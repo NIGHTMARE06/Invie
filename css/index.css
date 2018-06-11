@@ -4,14 +4,6 @@ body {
   margin: 0;
 }
 
-button {
-  border: none;
-  border-radius: 5px;
-  background-color: #F24729;
-  color: white;
-  padding: 8px;
-}
-
 /*************** HEADER **************/
 #home {
   position: relative;
@@ -82,8 +74,26 @@ button {
 }
 
 /*********** FOOTER **************/
-#contact {
-   background-color: #1F313C;
+#footer {
+  background-color: #1F313C;
+}
+
+.container-f {
+  width: 900px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.contact {
+  display: flex;
+  width: 300px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.contact-a {
+  display: flex;
 }
 
 .contact img {
@@ -97,6 +107,40 @@ button {
 .contact a {
   color: white;
   text-decoration: none;
+  margin: 10px 10px 10px 0;
+}
+
+.form {
+  display: flex;
+  width: 400px;
+  color: white;
+  padding: 50px 10px;
+}
+
+.col1, .col2 {
+  display: flex;
+  flex-direction: column;
+}
+
+.col1 {
+  margin-right: 15px;
+}
+
+.col2 {
+  align-items: flex-start;
+}
+
+.form label {
+  margin-bottom: 10px;
+}
+
+.sex {
+  margin-top: 10px;
+}
+
+/*********** BUY TABLE **************/
+table {
+  width: 100%;
 }
 
 /*********** CLASS **************/
@@ -123,4 +167,12 @@ button {
   float: right;
   position: relative;
   top: -137px;
+}
+
+.btn {
+  border: none;
+  border-radius: 5px;
+  background-color: #F24729;
+  color: white;
+  padding: 8px;
 }
