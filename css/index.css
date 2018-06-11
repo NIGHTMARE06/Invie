@@ -152,6 +152,11 @@ th, td {
   padding: 20px;
 }
 
+table, th, td {
+  border: 1px solid #1F313C;
+  border-collapse: collapse;
+}
+
 /*********** CLASS **************/
 .container {
   width: 800px;
