@@ -146,6 +146,10 @@ body {
   align-items: flex-start;
 }
 
+.col2 .btn {
+  margin-top: 15px;
+}
+
 .form label {
   margin-bottom: 10px;
 }
