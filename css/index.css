@@ -218,3 +218,11 @@ table, th, td {
   background: linear-gradient(to right, #ED472A, #F1681C);
   cursor: pointer;
 }
+
+input, textarea {
+  outline: 0;
+}
+
+input:focus, textarea:focus {
+  background-color: #DDD;
+}
