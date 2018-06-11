@@ -11,6 +11,7 @@ body {
 
 .logo {
   display: inline-block;
+  margin-left: 0;
 }
 
 .nav {
@@ -37,6 +38,11 @@ body {
   padding: 20px;
 }
 
+#title a {
+  color: white;
+  text-decoration: none;
+}
+
 #title p {
   font-size: 24px;
   margin-top: 0;
@@ -46,6 +52,10 @@ body {
   font-size: 70px;
   margin-bottom: 15px;
   margin-top: 70px;
+}
+
+#title span {
+  text-decoration: line-through;
 }
 
 #title button {
@@ -190,8 +200,10 @@ table, th, td {
 
 .btn {
   border: none;
-  border-radius: 5px;
-  background-color: #F24729;
+  border-radius: 8px;
   color: white;
-  padding: 8px;
+  padding: 8px 12px;
+  font-size: 16px;
+  background: linear-gradient(to right, #ED472A, #F1681C);
+  cursor: pointer;
 }
