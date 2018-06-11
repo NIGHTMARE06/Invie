@@ -143,6 +143,11 @@ table {
   width: 100%;
 }
 
+th {
+  background-color: #1F313C;
+  color: white;
+}
+
 /*********** CLASS **************/
 .container {
   width: 800px;
