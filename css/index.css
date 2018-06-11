@@ -148,6 +148,10 @@ th {
   color: white;
 }
 
+th, td {
+  padding: 20px;
+}
+
 /*********** CLASS **************/
 .container {
   width: 800px;
