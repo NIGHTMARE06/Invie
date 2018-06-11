@@ -1,0 +1,56 @@
+/*************** BODY ***************/
+body {
+  font-family: 'Amaranth', sans-serif;
+  margin: 0;
+}
+
+/*************** TITLE **************/
+#title {
+  background-image: url('../res/background.png');
+  color: white;
+  padding: 20px;
+}
+
+#title p {
+  font-size: 24px;
+  margin-top: 0;
+}
+
+#title h1 {
+  font-size: 70px;
+  margin-bottom: 15px;
+  margin-top: 70px;
+}
+
+#title button {
+  margin-bottom: 70px;
+}
+
+/*************** GUITARS **************/
+#guitars {
+  color: #1F313C;
+}
+
+#guitars h2 {
+  font-size: 35px;
+}
+
+#guitars h3 { /* Guitar name */
+  font-size: 50px;
+  margin-bottom: 10px;
+}
+
+/*************** HEADER **************/
+.logo {
+  display: inline-block;
+}
+
+.nav {
+  font-size: 24px;
+  display: inline-block;
+}
+
+.nav li {
+  display: inline-block;
+  margin-left: 30px;
+}
