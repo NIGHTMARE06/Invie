@@ -32,6 +32,7 @@ body {
 /*************** TITLE **************/
 #title {
   background-image: url('../res/background.png');
+  background-size: cover;
   color: white;
   padding: 20px;
 }
