@@ -4,6 +4,35 @@ body {
   margin: 0;
 }
 
+button {
+  border: none;
+  border-radius: 5px;
+  background-color: #F24729;
+  color: white;
+  padding: 8px;
+}
+
+/*************** HEADER **************/
+#home {
+  position: relative;
+}
+
+.logo {
+  display: inline-block;
+}
+
+.nav {
+  font-size: 24px;
+  display: inline-block;
+  position: absolute;
+  right: 0;
+}
+
+.nav li {
+  display: inline-block;
+  margin-left: 30px;
+}
+
 /*************** TITLE **************/
 #title {
   background-image: url('../res/background.png');
@@ -27,6 +56,18 @@ body {
 }
 
 /*************** GUITARS **************/
+.guitar {
+  /* overflow: hidden; */
+  padding: 10px;
+  margin: 10px;
+  border: 1px solid #0A5A6B;
+  border-radius: 10px;
+}
+
+#guitars ol {
+  padding: 0;
+}
+
 #guitars {
   color: #1F313C;
 }
@@ -40,17 +81,28 @@ body {
   margin-bottom: 10px;
 }
 
-/*************** HEADER **************/
-.logo {
-  display: inline-block;
+/*********** CLASS **************/
+.container {
+  width: 800px;
+  margin: auto;
 }
 
-.nav {
-  font-size: 24px;
-  display: inline-block;
+.container-gl {
+  padding-left: 20px
 }
 
-.nav li {
-  display: inline-block;
-  margin-left: 30px;
+.container-gr {
+  margin-left: 370px;
+}
+
+.img-left {
+  float: left;
+  position: relative;
+  top: 80px;
+}
+
+.img-right {
+  float: right;
+  position: relative;
+  top: -137px;
 }
