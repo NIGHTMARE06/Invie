@@ -25,6 +25,10 @@ body {
   margin-left: 30px;
 }
 
+.nav li::before {
+  content: "⊸";
+}
+
 /*************** TITLE **************/
 #title {
   background-image: url('../res/background.png');
