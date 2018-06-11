@@ -65,19 +65,19 @@ body {
 
 /*************** GUITARS **************/
 .guitar {
-  /* overflow: hidden; */
+  margin: 10px 10px 30px 30px;
   padding: 10px;
-  margin: 10px;
   border: 1px solid #0A5A6B;
   border-radius: 10px;
 }
 
-#guitars ol {
-  padding: 0;
-}
-
 #guitars {
   color: #1F313C;
+  margin-bottom: 60px;
+}
+
+#guitars ol {
+  padding: 0;
 }
 
 #guitars h2 {
@@ -92,6 +92,7 @@ body {
 /*********** FOOTER **************/
 #footer {
   background-color: #1F313C;
+  padding: 50px 10px;
 }
 
 .container-f {
@@ -130,7 +131,6 @@ body {
   display: flex;
   width: 400px;
   color: white;
-  padding: 50px 10px;
 }
 
 .col1, .col2 {
@@ -185,12 +185,18 @@ table, th, td {
 
 .container-gr {
   margin-left: 370px;
+  position: relative;
+  bottom: 90px;
 }
 
 .img-left {
   float: left;
   position: relative;
-  top: 80px;
+  /* top: 80px; */
+}
+
+.guitar-height {
+  height: 190px;
 }
 
 .img-right {
