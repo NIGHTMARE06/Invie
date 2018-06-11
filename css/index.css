@@ -143,6 +143,20 @@ table {
   width: 100%;
 }
 
+th {
+  background-color: #1F313C;
+  color: white;
+}
+
+th, td {
+  padding: 20px;
+}
+
+table, th, td {
+  border: 1px solid #1F313C;
+  border-collapse: collapse;
+}
+
 /*********** CLASS **************/
 .container {
   width: 800px;
