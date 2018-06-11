@@ -81,6 +81,15 @@ button {
   margin-bottom: 10px;
 }
 
+/*********** FOOTER **************/
+#contact {
+   background-color: #1F313C;
+}
+
+.contact {
+
+}
+
 /*********** CLASS **************/
 .container {
   width: 800px;
