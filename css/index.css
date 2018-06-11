@@ -159,6 +159,10 @@ body {
 }
 
 /*********** BUY TABLE **************/
+.table {
+  margin: 50px 0;
+}
+
 table {
   width: 100%;
 }
