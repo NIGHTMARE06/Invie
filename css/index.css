@@ -178,8 +178,8 @@ table, th, td {
 /*********** CLASS **************/
 .container {
   width: auto;
-  max-width: 800px;
   margin: auto;
+  max-width: 800px;
 }
 
 .container-gl {
@@ -249,5 +249,27 @@ input:focus, textarea:focus {
   /* Guitars */
   #guitars {
     text-align: center;
+  }
+
+  .img-right, .img-left {
+    float: none;
+    position: static;
+  }
+
+  #guitars h3 {
+    margin: 0;
+  }
+
+  .guitar li {
+    list-style: none;
+  }
+
+  .guitar.guitar-height {
+    height: auto;
+  }
+
+  .container-gr {
+    margin: 0;
+    position: static;
   }
 }
