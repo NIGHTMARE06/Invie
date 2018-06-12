@@ -230,3 +230,10 @@ input, textarea {
 input:focus, textarea:focus {
   background-color: #DDD;
 }
+
+@media screen and (max-width: 800px) {
+  .container {
+    width: auto;
+    max-width: 800px;
+  }
+}
