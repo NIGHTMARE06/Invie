@@ -195,7 +195,6 @@ table, th, td {
 .img-left {
   float: left;
   position: relative;
-  /* top: 80px; */
 }
 
 .guitar-height {
@@ -226,9 +225,29 @@ input:focus, textarea:focus {
   background-color: #DDD;
 }
 
+/************* Responsive design ***************/
 @media screen and (max-width: 800px) {
-  .container {
-    width: auto;
-    max-width: 800px;
+  /* Title page */
+  #title h1 {
+    font-size: 45px;
+    margin-top: 30px;
+  }
+
+  #title p {
+    font-size: 18px;
+  }
+
+  #title {
+    height: auto;
+  }
+
+  #title .btn {
+    margin-bottom: 30px;
+    display: inline-block;
+  }
+
+  /* Guitars */
+  #guitars {
+    text-align: center;
   }
 }
