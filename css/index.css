@@ -225,7 +225,7 @@ input:focus, textarea:focus {
   background-color: #DDD;
 }
 
-/************* Responsive design ***************/
+/************* Responsive design for tablet ***************/
 @media screen and (max-width: 800px) {
   /* Title page */
   #title h1 {
@@ -271,5 +271,75 @@ input:focus, textarea:focus {
   .container-gr {
     margin: 0;
     position: static;
+  }
+
+  .container-gl {
+    padding: 0;
+  }
+}
+
+/************* Responsive design for mobile device 650 ***************/
+@media screen and (max-width: 650px) {
+  /* Header */
+  #home {
+    text-align: center;
+  }
+
+  .nav {
+    position: static;
+    display: block;
+  }
+
+  .nav li:first-child {
+    margin: 0;
+  }
+
+  .nav ul {
+    padding: 0;
+  }
+
+  .logo {
+    margin: 0;
+  }
+}
+
+/************* Responsive design for mobile device 500 ***************/
+@media screen and (max-width: 500px) {
+  /* Header */
+  .nav li {
+    display: block;
+    margin: 0;
+    padding: 8px 0;
+    border-bottom: 1px solid white;
+  }
+
+  .nav li::before {
+    display: none;
+  }
+
+  .nav li:first-child {
+    border-top: 1px solid white;
+  }
+
+  #title {
+    text-align: center;
+  }
+
+  #title h1 {
+    font-size: 35px;
+  }
+
+  #title p {
+    font-size: 16px;
+  }
+
+  /* Guitars */
+  .guitar img {
+    width: 220px;
+    height: auto;
+  }
+
+  #guitars h3 {
+    font-size: 34px;
   }
 }
