@@ -17,10 +17,8 @@ function toggleMenu() {
 
 function mediaQuery() {
   if (media.matches) {
-    $open.addEventListener('touchstart', toggleMenu)
     $open.addEventListener('click', toggleMenu)
   } else {
-    $open.removeEventListener('touchstart', toggleMenu)
     $open.removeEventListener('click', toggleMenu)
   }
 }
