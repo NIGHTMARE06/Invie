@@ -11,4 +11,10 @@ $open.addEventListener('click', () => {
 
 function toggleMenu() {
   $navMenu.classList.toggle('active')
+
+  if($navMenu.classList.contains('active')) {
+    $open.className = 'fas fa-times btn-nav'
+  } else {
+    $open.className = 'fas fa-bars btn-nav'
+  }
 }
