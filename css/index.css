@@ -46,6 +46,20 @@ body {
   cursor: pointer;
 }
 
+.btn-burguer {
+  font-size: 16px;
+  width: 40px;
+  line-height: 40px;
+  border-radius: 50%;
+  height: 40px;
+  background-color: #28556e;
+  text-align: center;
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
 input, textarea {
   outline: 0;
 }
