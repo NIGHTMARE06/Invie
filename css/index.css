@@ -4,6 +4,71 @@ body {
   margin: 0;
 }
 
+/*********** CLASS **************/
+.container {
+  width: auto;
+  margin: auto;
+  max-width: 800px;
+}
+
+.container-gl {
+  padding-left: 20px
+}
+
+.container-gr {
+  margin-left: 370px;
+  position: relative;
+  bottom: 90px;
+}
+
+.img-left {
+  float: left;
+  position: relative;
+}
+
+.guitar-height {
+  height: 190px;
+}
+
+.img-right {
+  float: right;
+  position: relative;
+  top: -137px;
+}
+
+.btn {
+  border: none;
+  border-radius: 8px;
+  color: white;
+  padding: 8px 12px;
+  font-size: 16px;
+  background: linear-gradient(to right, #ED472A, #F1681C);
+  cursor: pointer;
+}
+
+.btn-nav {
+  cursor: pointer;
+  width: 40px;
+  line-height: 40px;
+  border-radius: 50%;
+  height: 40px;
+  background-color: #28556e;
+  text-align: center;
+  display: inline-block;
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  z-index: 2;
+}
+
+input, textarea {
+  outline: 0;
+}
+
+input:focus, textarea:focus {
+  background-color: #DDD;
+}
+
 /*************** HEADER **************/
 #home {
   position: relative;
@@ -175,56 +240,6 @@ table, th, td {
   border-collapse: collapse;
 }
 
-/*********** CLASS **************/
-.container {
-  width: auto;
-  margin: auto;
-  max-width: 800px;
-}
-
-.container-gl {
-  padding-left: 20px
-}
-
-.container-gr {
-  margin-left: 370px;
-  position: relative;
-  bottom: 90px;
-}
-
-.img-left {
-  float: left;
-  position: relative;
-}
-
-.guitar-height {
-  height: 190px;
-}
-
-.img-right {
-  float: right;
-  position: relative;
-  top: -137px;
-}
-
-.btn {
-  border: none;
-  border-radius: 8px;
-  color: white;
-  padding: 8px 12px;
-  font-size: 16px;
-  background: linear-gradient(to right, #ED472A, #F1681C);
-  cursor: pointer;
-}
-
-input, textarea {
-  outline: 0;
-}
-
-input:focus, textarea:focus {
-  background-color: #DDD;
-}
-
 /************* Responsive design for tablet ***************/
 @media screen and (max-width: 800px) {
   /* Title page */
@@ -346,6 +361,28 @@ input:focus, textarea:focus {
 /************* Responsive design for mobile device 500 ***************/
 @media screen and (max-width: 500px) {
   /* Header */
+  .nav {
+    background: #ff1346ce;
+    position: absolute;
+    top: 0;
+    left: -100%;
+    z-index: 1;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    transition: 300ms;
+  }
+
+  .nav.active {
+    left: 0;
+  }
+
+  .nav ul {
+    flex: 1;
+  }
+
   .nav li {
     display: block;
     margin: 0;
@@ -363,6 +400,10 @@ input:focus, textarea:focus {
 
   #title {
     text-align: center;
+  }
+
+  #title .container {
+    position: static;
   }
 
   #title h1 {
