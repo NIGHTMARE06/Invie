@@ -1,13 +1,9 @@
 const $open = document.getElementById('btn-open')
 const $navMenu = document.getElementById('nav')
+const media = window.matchMedia('(max-width: 500px)')
 
-$open.addEventListener('touchstart', () =>  {
-  toggleMenu()
-})
-
-$open.addEventListener('click', () => {
-  toggleMenu()
-})
+mediaQuery()
+media.addListener(mediaQuery)
 
 function toggleMenu() {
   $navMenu.classList.toggle('active')
@@ -18,3 +14,14 @@ function toggleMenu() {
     $open.className = 'fas fa-bars btn-nav'
   }
 }
+
+function mediaQuery() {
+  if (media.matches) {
+    $open.addEventListener('touchstart', toggleMenu)
+    $open.addEventListener('click', toggleMenu)
+  } else {
+    $open.removeEventListener('touchstart', toggleMenu)
+    $open.removeEventListener('click', toggleMenu)
+  }
+}
+
