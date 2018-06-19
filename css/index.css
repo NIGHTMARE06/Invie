@@ -4,6 +4,56 @@ body {
   margin: 0;
 }
 
+/*********** CLASS **************/
+.container {
+  width: auto;
+  margin: auto;
+  max-width: 800px;
+}
+
+.container-gl {
+  padding-left: 20px
+}
+
+.container-gr {
+  margin-left: 370px;
+  position: relative;
+  bottom: 90px;
+}
+
+.img-left {
+  float: left;
+  position: relative;
+}
+
+.guitar-height {
+  height: 190px;
+}
+
+.img-right {
+  float: right;
+  position: relative;
+  top: -137px;
+}
+
+.btn {
+  border: none;
+  border-radius: 8px;
+  color: white;
+  padding: 8px 12px;
+  font-size: 16px;
+  background: linear-gradient(to right, #ED472A, #F1681C);
+  cursor: pointer;
+}
+
+input, textarea {
+  outline: 0;
+}
+
+input:focus, textarea:focus {
+  background-color: #DDD;
+}
+
 /*************** HEADER **************/
 #home {
   position: relative;
@@ -173,56 +223,6 @@ th, td {
 table, th, td {
   border: 1px solid #1F313C;
   border-collapse: collapse;
-}
-
-/*********** CLASS **************/
-.container {
-  width: auto;
-  margin: auto;
-  max-width: 800px;
-}
-
-.container-gl {
-  padding-left: 20px
-}
-
-.container-gr {
-  margin-left: 370px;
-  position: relative;
-  bottom: 90px;
-}
-
-.img-left {
-  float: left;
-  position: relative;
-}
-
-.guitar-height {
-  height: 190px;
-}
-
-.img-right {
-  float: right;
-  position: relative;
-  top: -137px;
-}
-
-.btn {
-  border: none;
-  border-radius: 8px;
-  color: white;
-  padding: 8px 12px;
-  font-size: 16px;
-  background: linear-gradient(to right, #ED472A, #F1681C);
-  cursor: pointer;
-}
-
-input, textarea {
-  outline: 0;
-}
-
-input:focus, textarea:focus {
-  background-color: #DDD;
 }
 
 /************* Responsive design for tablet ***************/
