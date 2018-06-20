@@ -3,6 +3,13 @@ const $navMenu = document.getElementById('nav')
 const $body = document.body
 const media = window.matchMedia('(max-width: 500px)')
 
+// Load google fonts
+WebFont.load({
+  google: {
+    families: ['Amaranth']
+  }
+})
+
 // Smooth scroll
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   anchor.addEventListener('click', function(e) {
