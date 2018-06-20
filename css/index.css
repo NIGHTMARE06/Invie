@@ -36,10 +36,6 @@ body {
   top: -137px;
 }
 
-.menu-opened {
-  overflow: hidden;
-}
-
 .btn {
   border: none;
   border-radius: 8px;
@@ -59,10 +55,11 @@ body {
   background-color: #28556e;
   text-align: center;
   display: inline-block;
-  position: absolute;
+  position: fixed;
   top: 15px;
   left: 15px;
   z-index: 2;
+  display: none;
 }
 
 input, textarea {
@@ -101,7 +98,7 @@ input:focus, textarea:focus {
 
 /*************** TITLE **************/
 #title {
-  background-color: #425C74;
+  background-color: #3A566B;
   background-image: url('../res/background.png');
   background-size: cover;
   color: white;
@@ -255,6 +252,29 @@ th {
   font-size: 18px;
 }
 
+/* Responsive video */
+.video-demo {
+  max-width: 500px;
+  margin: 30px auto;
+  border: 5px solid #3A566B;
+  border-radius: 8px;
+}
+
+.container-video {
+  position: relative;
+  padding-top: 56.25%;
+}
+
+.video {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+}
+
 /************* Responsive design for tablet ***************/
 @media screen and (max-width: 800px) {
   /* Title page */
@@ -373,12 +393,23 @@ th {
   }
 }
 
+/************* Responsive design for mobile device 545 ***************/
+@media screen and (max-width: 545px) {
+  .video-demo {
+    margin: 30px 10px;
+  }
+}
+
 /************* Responsive design for mobile device 500 ***************/
 @media screen and (max-width: 500px) {
   /* Header */
+  .btn-nav {
+    display: block;
+  }
+
   .nav {
     background: rgba(255, 19, 70, 0.8);
-    position: absolute;
+    position: fixed;
     top: 0;
     left: -100%;
     z-index: 1;
@@ -445,22 +476,6 @@ th {
   .description {
     display: none;
   }
-}
-
-/* Responsive video */
-.container-video {
-  position: relative;
-  padding-top: 56.25%;
-}
-
-.video {
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  width: 100%;
-  height: 100%;
 }
 
 /* Retina header */

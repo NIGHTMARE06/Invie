@@ -3,6 +3,18 @@ const $navMenu = document.getElementById('nav')
 const $body = document.body
 const media = window.matchMedia('(max-width: 500px)')
 
+// Smooth scroll
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+  anchor.addEventListener('click', function(e) {
+    e.preventDefault()
+
+    document.querySelector(this.getAttribute('href')).scrollIntoView({
+      behavior: 'smooth'
+    })
+  })
+})
+
+// Media query for button and the navbar
 mediaQuery()
 media.addListener(mediaQuery)
 
@@ -16,13 +28,11 @@ function toggleMenu() {
 
 function openMenu() {
   $navMenu.classList.add('active')
-  $body.classList.add('menu-opened')
   $open.className = 'fas fa-times btn-nav'
 }
 
 function closeMenu() {
   $navMenu.classList.remove('active')
-  $body.classList.remove('menu-opened')
   $open.className = 'fas fa-bars btn-nav'
 }
 
@@ -34,12 +44,13 @@ function mediaQuery() {
   }
 }
 
+// Be lazy
 var bLazy = new Blazy({
   selector: 'img'
 })
 
+// Hammer.js
 var hammer = new Hammer($body)
 
 hammer.on('swiperight', openMenu)
-
 hammer.on('swipeleft', closeMenu)
