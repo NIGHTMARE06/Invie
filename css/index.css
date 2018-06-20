@@ -224,7 +224,8 @@ input:focus, textarea:focus {
 }
 
 table {
-  width: 100%;
+  width: 90%;
+  margin: auto;
 }
 
 th {
@@ -236,9 +237,18 @@ th, td {
   padding: 20px;
 }
 
-table, th, td {
-  border: 1px solid #1F313C;
+table, td {
+  border: 1px solid white;
   border-collapse: collapse;
+  background-color: #1F313C;
+  color: white;
+}
+
+th {
+  color: white;
+  background-color: #1b2a33;
+  border: 1px solid white;
+  font-size: 18px;
 }
 
 /************* Responsive design for tablet ***************/
@@ -423,6 +433,13 @@ table, th, td {
 
   #guitars h3 {
     font-size: 34px;
+  }
+}
+
+/* Responsive tables */
+@media screen and (max-width: 445px) {
+  .description {
+    display: none;
   }
 }
 
