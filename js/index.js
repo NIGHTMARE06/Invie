@@ -23,3 +23,7 @@ function mediaQuery() {
   }
 }
 
+var bLazy = new Blazy({
+  selector: 'img'
+})
+
