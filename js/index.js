@@ -1,18 +1,29 @@
 const $open = document.getElementById('btn-open')
 const $navMenu = document.getElementById('nav')
+const $body = document.body
 const media = window.matchMedia('(max-width: 500px)')
 
 mediaQuery()
 media.addListener(mediaQuery)
 
 function toggleMenu() {
-  $navMenu.classList.toggle('active')
-
   if($navMenu.classList.contains('active')) {
-    $open.className = 'fas fa-times btn-nav'
+    closeMenu()
   } else {
-    $open.className = 'fas fa-bars btn-nav'
+    openMenu()
   }
+}
+
+function openMenu() {
+  $navMenu.classList.add('active')
+  $body.classList.add('menu-opened')
+  $open.className = 'fas fa-times btn-nav'
+}
+
+function closeMenu() {
+  $navMenu.classList.remove('active')
+  $body.classList.remove('menu-opened')
+  $open.className = 'fas fa-bars btn-nav'
 }
 
 function mediaQuery() {
@@ -27,3 +38,8 @@ var bLazy = new Blazy({
   selector: 'img'
 })
 
+var hammer = new Hammer($body)
+
+hammer.on('swiperight', openMenu)
+
+hammer.on('swipeleft', closeMenu)

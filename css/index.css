@@ -36,6 +36,10 @@ body {
   top: -137px;
 }
 
+.menu-opened {
+  overflow: hidden;
+}
+
 .btn {
   border: none;
   border-radius: 8px;
