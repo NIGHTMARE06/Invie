@@ -380,7 +380,7 @@ th {
     width: 100%;
     display: flex;
     align-items: center;
-    transition: 300ms
+    transition: 300ms;
   }
   .nav.active {
     left: 0
